@@ -7,5 +7,12 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <!--simple app default style-->
+    <style name="simpleDefault">
+        <item name="android:fontFamily">@font/bitter</item>
+
+
+
+    </style>
 
 </resources>

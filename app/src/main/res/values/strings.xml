@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">TodoList</string>
+    <string name="type_category">Type category</string>
+    <string name="add_task">Add Task</string>
+    <string name="today">Today,</string>
+    <string name="time">10:01am -12:11pm </string>
+    <string name="choose_time">choose time</string>
+    <string-array name="timeSpan_array">
+        <item>Daily</item>
+        <item>Monthly</item>
+        <item>yearly</item>
+        <item>weekly</item>
+        <item>other..</item>
+    </string-array>
+
+    <string name="add_list_here">add list here…</string>
+    <string name="select_date_of_reminder">Select date of reminder</string>
+    <string name="defaults">Default</string>
+    <string name="daily">Daily</string>
+    <string name="create_topic">Create Topic</string>
+    <string name="comma">,</string>
+    <string name="drop_down">drop down</string>
 </resources>
