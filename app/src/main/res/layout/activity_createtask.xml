@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TodoList">
+    tools:context=".CreateTask">
 
     <EditText
         android:id="@+id/text_todolist_text"
@@ -12,7 +12,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="156dp"
+        android:layout_marginTop="152dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="@string/add_list_here"
@@ -23,12 +23,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/text_todolist_text2"
+        style="@style/simpleDefault"
+        android:layout_width="178dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/add_task_description"
+        android:inputType="textPersonName"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/text_todolist_text"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/text_todolist_text"
+        app:layout_constraintTop_toBottomOf="@+id/text_todolist_text" />
+
     <TextView
         android:id="@+id/txtview_date"
         style="@style/simpleDefault"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="144dp"
         android:text="@string/today"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="18sp"
@@ -41,13 +56,13 @@
         style="@style/simpleDefault"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="88dp"
         android:clickable="true"
         android:focusable="true"
         android:text="@string/time"
         app:layout_constraintStart_toEndOf="@+id/txtview_date"
-        app:layout_constraintTop_toBottomOf="@+id/text_todolist_text" />
+        app:layout_constraintTop_toBottomOf="@+id/text_todolist_text2" />
 
     <TextView
         android:id="@+id/txtView_choosetime"
@@ -64,7 +79,7 @@
         style="@style/simpleDefault"
         android:layout_width="321dp"
         android:layout_height="55dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="84dp"
         android:backgroundTint="#000000"
         android:text="@string/add_task"
         android:textColor="@android:color/white"
@@ -79,20 +94,21 @@
         style="@style/simpleDefault"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="32dp"
         android:text="@string/daily"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/text_todolist_text"
-        app:layout_constraintTop_toBottomOf="@+id/text_todolist_text" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_todolist_text2" />
 
     <TextView
         android:id="@+id/actv_category_topic"
         style="@style/simpleDefault"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="4dp"
         android:text="@string/defaults"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="18sp"

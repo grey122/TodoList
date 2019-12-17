@@ -21,7 +21,7 @@ public class Topic extends AppCompatActivity {
     public static final String EXTRA_TIMESPAN = "edu.socialmedia.todolist.TIMESPAN";
     DatePickerDialog.OnDateSetListener mSetListener;
     private TextView mTxtDate;
-    private static final String[] listCategory = new String[]{"Default", "Personal", "shopping", "Wishlist", "computer Programming", "work"};
+    private static final String[] listCategory = new String[]{"Daily task", "tuesday", "manihac wednesday", "tb thursday", "busy monday", "thankGod is fridyay"};
     private AutoCompleteTextView mAcCategory;
     private Spinner mTimeSpanSpinner;
 
@@ -83,7 +83,7 @@ public class Topic extends AppCompatActivity {
     }
 
     public void createTopic(View view){
-        Intent intent = new Intent(this, TodoList.class);
+        Intent intent = new Intent(this, CreateTask.class);
         //put extra category
         mAcCategory = findViewById(R.id.actv_category_topic);
         String acCatMsg = mAcCategory.getText().toString();
